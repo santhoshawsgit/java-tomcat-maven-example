@@ -3,7 +3,7 @@
    remote_user: ansadmin
    become: yes
    tasks:
-   - name: container stop
+    - name: container stop
       shell: docker stop demo
     - name: container remove
       shell: docker rm -f demo
