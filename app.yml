@@ -13,4 +13,4 @@
     - name: container start 
       shell: docker run -itd --name demo -p 8070:8080 santhoshawsdocker/testproject:lts
     - name: httpd start
-      command: sh /usr/local/tomcat/bin/startup.sh
+      local_action: command sudo /usr/local/tomcat/bin/startup.sh
