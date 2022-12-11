@@ -11,4 +11,4 @@
     - name: container remove
       shell: docker rmi -f santhoshawsdocker/testproject
     - name: container start 
-      shell: docker run -itd --name demo -p 8070:8080 santhoshawsdocker/testproject:new
+      shell: docker run -itd --name demo -p 8070:8080 santhoshawsdocker/testproject:lts
