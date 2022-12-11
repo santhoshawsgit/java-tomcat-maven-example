@@ -5,6 +5,7 @@
    tasks:
     - name: container stop
       shell: docker stop demo
+      ignore_errors: yes
     - name: container remove
       shell: docker rm -f demo
     - name: container remove
